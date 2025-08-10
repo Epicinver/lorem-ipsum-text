@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Copy Text to Clipboard</title>
+<title>Lorem ipsum, dolor sit atem...</title>
 <style>
     body {
         margin: 0;
@@ -72,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Copy This Text</h1>
+        <h1>Copy the Lorem Ipsum text</h1>
         <pre id="text">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
@@ -84,7 +84,7 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 
 Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
         </pre>
-        <button onclick="copyText()">📋 Copy to Clipboard</button>
+        <button onclick="copyText()">Copy</button>
     </div>
 
 <script>
@@ -92,11 +92,12 @@ function copyText() {
     const text = document.getElementById('text').innerText;
     navigator.clipboard.writeText(text).then(() => {
         const btn = document.querySelector('button');
-        btn.innerText = "✅ Copied!";
-        setTimeout(() => btn.innerText = "📋 Copy to Clipboard", 2000);
+        btn.innerText = "Copied to Clipboard!";
+        setTimeout(() => btn.innerText = "Copy", 2000);
     });
 }
 </script>
 </body>
 </html>
  
+
